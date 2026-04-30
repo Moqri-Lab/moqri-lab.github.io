@@ -14,11 +14,11 @@
 
 const PEOPLE = [
   {
-    name: "Mahdi Moqri",
+    name: "Mahdi Moqri, PhD, MBA",
     role: "Principal Investigator",
     photo: "assets/photos/mahdi-moqri.jpg",             // replace with "assets/photos/mahdi-moqri.jpg"
-    bio: "Dr. Mahdi Moqri is a faculty member at Harvard Medical School and an independent investigator at the Division of Genetics as well as the Endocrinology, Diabetes, and Metabolism. His research integrates omics, bioinformatics, and computational methods to uncover the molecular mechanisms of aging and to develop new approaches for early detection and prevention of age-related diseases. Dr. Moqri co-directs the Biomarkers of Aging Consortium (agingconsortium.org), where he leads efforts to develop blood-based biomarkers of aging using large-scale omics datasets and longitudinal biobank resources. He completed his postdoctoral fellowship at Stanford University in the Snyder Lab, and his formal training is in computer science and informatics.",
-    links: {
+    bio: "Dr. Mahdi Moqri is a Harvard Medical School faculty member who researches the molecular mechanisms of aging using computational and omics approaches. He focuses on developing blood-based biomarkers for early detection of age-related diseases and co-directs the Biomarkers of Aging Consortium. He trained in computer science and informatics, and completed his postdoc at Stanford's Snyder Lab.
+      links: {
       website: "https://www.moqri.com",
       Linkedin: "https://www.linkedin.com/in/mahdi-moqri/",
       github: "https://github.com/moqri",
