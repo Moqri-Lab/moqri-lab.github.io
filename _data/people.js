@@ -40,9 +40,3 @@ const PEOPLE = [
   //   }
   // },
 ];
-  //     github: "https://github.com/janedoe",
-  //     twitter: "https://twitter.com/janedoe",
-  //     scholar: "#"
-  //   }
-  // },
-];
