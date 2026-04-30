@@ -90,7 +90,8 @@ nav a.active {
   overflow: hidden;
   min-height: 480px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-bg {
@@ -170,9 +171,8 @@ nav a.active {
 
 /* ── PEOPLE ── */
 .people-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  display: grid;
+  grid-template-columns: 1fr;
   border: 1.5px solid var(--border);
 }
 
