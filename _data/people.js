@@ -23,6 +23,7 @@ const PEOPLE = [
       linkedin: "https://www.linkedin.com/in/mahdi-moqri/",
       github: "https://github.com/moqri",
       scholar: "https://scholar.google.com/citations?hl=en&user=Lj-0SNIAAAAJ&view_op=list_works&sortby=pubdate"
+    }
   },
 
   // ── Example PhD student entry (remove or replace) ──────────
