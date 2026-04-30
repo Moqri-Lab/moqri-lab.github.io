@@ -46,7 +46,7 @@
   if (sorted.length === 0) {
     container.innerHTML = '<div class="empty-state">Publications coming soon</div>';
   } else {
-    const linkLabels = { pdf: 'PDF', doi: 'DOI', biorxiv: 'bioRxiv', github: 'Code', website: 'Project' };
+    const linkLabels = { pdf: 'PDF', doi: 'DOI', biorxiv: 'bioRxiv', github: 'Code', website: 'Project', scholar: 'Scholar ↗' };
     sorted.forEach(p => {
       const linksHtml = Object.entries(p.links || {})
         .filter(([, v]) => v)
