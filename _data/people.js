@@ -16,11 +16,11 @@ const PEOPLE = [
   {
     name: "Mahdi Moqri, PhD, MBA",
     role: "Principal Investigator",
-    photo: "assets/photos/mahdi-moqri.jpg",             // replace with "assets/photos/mahdi-moqri.jpg"
-    bio: "Dr. Mahdi Moqri is a Harvard Medical School faculty member who researches the molecular mechanisms of aging using computational and omics approaches. He focuses on developing blood-based biomarkers for early detection of age-related diseases and co-directs the Biomarkers of Aging Consortium. He trained in computer science and informatics, and completed his postdoc at Stanford's Snyder Lab.
-      links: {
+    photo: "assets/photos/mahdi-moqri.jpg",
+    bio: "Dr. Mahdi Moqri is a Harvard Medical School faculty member who researches the molecular mechanisms of aging using computational and omics approaches. He focuses on developing blood-based biomarkers for early detection of age-related diseases and co-directs the Biomarkers of Aging Consortium. He trained in computer science and informatics, and completed his postdoc at Stanford's Snyder Lab.",
+    links: {
       website: "https://www.moqri.com",
-      Linkedin: "https://www.linkedin.com/in/mahdi-moqri/",
+      linkedin: "https://www.linkedin.com/in/mahdi-moqri/",
       github: "https://github.com/moqri",
       scholar: "https://scholar.google.com/citations?hl=en&user=Lj-0SNIAAAAJ&view_op=list_works&sortby=pubdate"
     }
@@ -34,6 +34,12 @@ const PEOPLE = [
   //   bio: "Interested in aging clocks and multi-omics integration.",
   //   links: {
   //     website: "https://janedoe.com",
+  //     github: "https://github.com/janedoe",
+  //     twitter: "https://twitter.com/janedoe",
+  //     scholar: "#"
+  //   }
+  // },
+];
   //     github: "https://github.com/janedoe",
   //     twitter: "https://twitter.com/janedoe",
   //     scholar: "#"
