@@ -86,9 +86,28 @@ nav a.active {
 
 /* ── HERO (home) ── */
 .hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('assets/hero-bg.gif') center center / cover no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
   padding: 5rem 2rem 3rem;
   max-width: var(--max);
   margin: 0 auto;
+  width: 100%;
 }
 
 .hero-label {
@@ -151,10 +170,9 @@ nav a.active {
 
 /* ── PEOPLE ── */
 .people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5px;
-  background: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   border: 1.5px solid var(--border);
 }
 
@@ -162,6 +180,11 @@ nav a.active {
   background: var(--bg);
   padding: 1.75rem;
   transition: background 0.15s;
+  border-bottom: 1px solid var(--border);
+}
+
+.person-card:last-child {
+  border-bottom: none;
 }
 
 .person-card:hover { background: var(--surface); }
