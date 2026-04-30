@@ -63,7 +63,7 @@
         ? `<img class="person-photo" src="${p.photo}" alt="${p.name}" />`
         : `<div class="person-photo">${initials}</div>`;
 
-      const linkLabels = { website: 'Web', github: 'GitHub', twitter: 'Twitter', scholar: 'Scholar' };
+      const linkLabels = { website: 'Web', github: 'GitHub', twitter: 'Twitter', scholar: 'Scholar', linkedin: 'LinkedIn' };
       const linksHtml = Object.entries(p.links || {})
         .filter(([, v]) => v && v !== '#')
         .map(([k, v]) => `<a href="${v}" target="_blank" rel="noopener">${linkLabels[k] || k}</a>`)
