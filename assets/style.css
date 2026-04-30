@@ -97,7 +97,7 @@ nav a.active {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('assets/hero-bg.png') center center / cover no-repeat;
+  background: url('hero-bg.png') center center / cover no-repeat;
   opacity: 0.95;
   z-index: 0;
 }
