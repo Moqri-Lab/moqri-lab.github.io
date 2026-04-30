@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moqri Lab</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">moqri<span>lab</span></a>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-label">Moqri Lab · Computational Biology</div>
+  <h1>Decoding the <em>biology</em><br>of aging</h1>
+  <p>
+    We develop computational and statistical methods to understand
+    the molecular mechanisms of aging and longevity.
+  </p>
+  <div class="hero-divider"></div>
+  <p style="font-size:0.9rem; color:var(--text-muted);">
+    <!-- Add affiliation, department, university here -->
+    Department of Computational Biology &nbsp;·&nbsp; University Name
+  </p>
+</div>
+
+<div class="page" style="padding-top: 1rem;">
+  <div class="quick-links">
+    <a class="quick-link" href="research.html">
+      <div class="quick-link-label">01 &mdash; Research</div>
+      <div class="quick-link-title">Current Projects</div>
+      <div class="quick-link-desc">Methods for aging clocks, multi-omics, and more.</div>
+    </a>
+    <a class="quick-link" href="people.html">
+      <div class="quick-link-label">02 &mdash; People</div>
+      <div class="quick-link-title">The Team</div>
+      <div class="quick-link-desc">Graduate students, postdocs, and collaborators.</div>
+    </a>
+    <a class="quick-link" href="publications.html">
+      <div class="quick-link-label">03 &mdash; Publications</div>
+      <div class="quick-link-title">Papers</div>
+      <div class="quick-link-desc">Peer-reviewed research and preprints.</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  &copy; <span id="yr"></span> Moqri Lab &nbsp;&middot;&nbsp; moqri-lab.github.io
+</footer>
+
+<script src="assets/nav.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

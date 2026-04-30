@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications · Moqri Lab</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">moqri<span>lab</span></a>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="section-header">
+    <h2>Publications</h2>
+    <span class="count" id="pub-count"></span>
+  </div>
+
+  <div id="pub-container"></div>
+</div>
+
+<footer>
+  &copy; <span id="yr"></span> Moqri Lab &nbsp;&middot;&nbsp; moqri-lab.github.io
+</footer>
+
+<script src="_data/publications.js"></script>
+<script src="assets/nav.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const container = document.getElementById('pub-container');
+  const countEl = document.getElementById('pub-count');
+
+  const sorted = [...PUBLICATIONS].sort((a, b) => (b.year || 0) - (a.year || 0));
+
+  countEl.textContent = `${sorted.length} paper${sorted.length !== 1 ? 's' : ''}`;
+
+  if (sorted.length === 0) {
+    container.innerHTML = '<div class="empty-state">Publications coming soon</div>';
+  } else {
+    const linkLabels = { pdf: 'PDF', doi: 'DOI', biorxiv: 'bioRxiv', github: 'Code', website: 'Project' };
+    sorted.forEach(p => {
+      const linksHtml = Object.entries(p.links || {})
+        .filter(([, v]) => v)
+        .map(([k, v]) => `<a href="${v}" target="_blank" rel="noopener">${linkLabels[k] || k}</a>`)
+        .join('');
+
+      container.innerHTML += `
+        <div class="pub-item">
+          <div>
+            <div class="pub-title">${p.title}</div>
+            <div class="pub-authors">${p.authors}</div>
+            <div class="pub-venue">${p.venue}</div>
+            ${linksHtml ? `<div class="pub-links">${linksHtml}</div>` : ''}
+          </div>
+          <div class="pub-year">${p.year}</div>
+        </div>`;
+    });
+  }
+</script>
+</body>
+</html>

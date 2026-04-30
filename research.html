@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research · Moqri Lab</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">moqri<span>lab</span></a>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="section-header">
+    <h2>Research</h2>
+    <span class="count" id="research-count"></span>
+  </div>
+
+  <div id="research-container"></div>
+</div>
+
+<footer>
+  &copy; <span id="yr"></span> Moqri Lab &nbsp;&middot;&nbsp; moqri-lab.github.io
+</footer>
+
+<script src="_data/research.js"></script>
+<script src="assets/nav.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const container = document.getElementById('research-container');
+  const countEl = document.getElementById('research-count');
+
+  countEl.textContent = `${RESEARCH.length} project${RESEARCH.length !== 1 ? 's' : ''}`;
+
+  if (RESEARCH.length === 0) {
+    container.innerHTML = '<div class="empty-state">Research areas coming soon</div>';
+  } else {
+    RESEARCH.forEach(r => {
+      const linkHtml = r.link
+        ? `<p style="margin-top:0.75rem;"><a href="${r.link}" target="_blank" rel="noopener"
+             style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.06em;color:var(--accent);text-transform:uppercase;">
+             Learn more →</a></p>`
+        : '';
+      container.innerHTML += `
+        <div class="research-item">
+          <span class="research-tag">${r.tag}</span>
+          <h3>${r.title}</h3>
+          <p>${r.description}</p>
+          ${linkHtml}
+        </div>`;
+    });
+  }
+</script>
+</body>
+</html>

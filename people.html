@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People · Moqri Lab</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">moqri<span>lab</span></a>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="section-header">
+    <h2>People</h2>
+    <span class="count" id="people-count"></span>
+  </div>
+
+  <div id="people-container"></div>
+</div>
+
+<footer>
+  &copy; <span id="yr"></span> Moqri Lab &nbsp;&middot;&nbsp; moqri-lab.github.io
+</footer>
+
+<script src="_data/people.js"></script>
+<script src="assets/nav.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const container = document.getElementById('people-container');
+  const countEl = document.getElementById('people-count');
+
+  // Role sort order
+  const roleOrder = [
+    "Principal Investigator", "Postdoc", "PhD Student",
+    "Master's Student", "Undergraduate", "Visiting Scholar", "Alumni"
+  ];
+
+  const sorted = [...PEOPLE].sort((a, b) =>
+    (roleOrder.indexOf(a.role) ?? 99) - (roleOrder.indexOf(b.role) ?? 99)
+  );
+
+  countEl.textContent = `${sorted.length} member${sorted.length !== 1 ? 's' : ''}`;
+
+  if (sorted.length === 0) {
+    container.innerHTML = '<div class="empty-state">Team members coming soon</div>';
+  } else {
+    const grid = document.createElement('div');
+    grid.className = 'people-grid';
+
+    sorted.forEach(p => {
+      const initials = p.name.split(' ').map(w => w[0]).slice(0, 2).join('');
+      const photoHtml = p.photo
+        ? `<img class="person-photo" src="${p.photo}" alt="${p.name}" />`
+        : `<div class="person-photo">${initials}</div>`;
+
+      const linkLabels = { website: 'Web', github: 'GitHub', twitter: 'Twitter', scholar: 'Scholar' };
+      const linksHtml = Object.entries(p.links || {})
+        .filter(([, v]) => v && v !== '#')
+        .map(([k, v]) => `<a href="${v}" target="_blank" rel="noopener">${linkLabels[k] || k}</a>`)
+        .join('');
+
+      grid.innerHTML += `
+        <div class="person-card">
+          ${photoHtml}
+          <div class="person-name">${p.name}</div>
+          <div class="person-role">${p.role}</div>
+          <div class="person-bio">${p.bio || ''}</div>
+          ${linksHtml ? `<div class="person-links">${linksHtml}</div>` : ''}
+        </div>`;
+    });
+
+    container.appendChild(grid);
+  }
+</script>
+</body>
+</html>
