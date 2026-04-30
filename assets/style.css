@@ -25,6 +25,10 @@ body {
   line-height: 1.7;
 }
 
+body.home {
+  background: transparent;
+}
+
 /* ── NAV ── */
 nav {
   position: sticky;
@@ -95,11 +99,10 @@ nav a.active {
 }
 
 .hero-bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: url('hero-bg.png') center center / cover no-repeat;
-  opacity: 0.95;
-  z-index: 0;
+  z-index: -1;
 }
 
 .hero-content {
@@ -355,15 +358,16 @@ nav a.active {
 }
 
 .quick-link {
-  background: var(--bg);
+  background: rgba(250, 249, 247, 0.75);
   padding: 1.5rem;
   text-decoration: none;
   color: var(--text);
   transition: background 0.15s;
   display: block;
+  backdrop-filter: blur(4px);
 }
 
-.quick-link:hover { background: var(--surface); }
+.quick-link:hover { background: rgba(242, 240, 236, 0.9); }
 
 .quick-link-label {
   font-family: var(--mono);
