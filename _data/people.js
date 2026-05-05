@@ -43,7 +43,7 @@ const PEOPLE = [
   {
     name: "Yinjie Wu",
     role: "Gradute Student",
-    photo: "assets/photos/yinjie-wu.jpg",
+    photo: "assets/photos/yinjie-wu.png",
     email: "yinjiewu@hsph.harvard.edu",
     bio: "Yinjie Wu is a computational biology and quantitative genetics student at Harvard T.H. Chan School of Public Health. He trained in computer science and biology at McGill University before beginning his graduate work at Harvard. His current work uses large-scale omics and population datasets to study biological aging, with a focus on epigenetic biomarkers, long-read sequencing, and computational approaches for interpreting age-related molecular change.",
     links: {
