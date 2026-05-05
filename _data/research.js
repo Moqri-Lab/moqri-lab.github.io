@@ -17,22 +17,27 @@ const RESEARCH = [
   //   description: "We develop multi-omics aging clocks that integrate epigenomic, transcriptomic, and proteomic data to measure biological age with high resolution.",
   //   link: null
   // },
-    {
-      tag: "Biomaekers of Aging",
-      title: "Biomaekers of Aging",
-      description: "Moqri Lab is a founding member of Bioamarkers of Aging Consoritum, establishing reliable biomarkers of aging for longevity interventions.",
-      link: https://www.agingconsortium.org/
-    },
-    {
-      tag: "Bioamrkers of Alzheimer's",
-      title: "Bioamrkers of Alzheimer's",
-      description: "Moqri Lab build and validate blood-based multi-omic biomarkers for Brain Aging and early detection of Alzheimer's.",
-      link: https://www.agingconsortium.org/brain-aging
-    },  
-    {
-      tag: "AI for Patient Outcomes",
-      title: "AI for Patient Outcomes",
-      description: "Moqri Lab is using large-scale Electronic Health Records (EHR) data and multi-omics data from MGB Biobank to predict patient outcomes and prevent functional decline",
-      link: https://www.massgeneralbrigham.org/en/research-and-innovation/participate-in-research/biobank/for-researchers
-    },  
+  {
+    tag: "Biomarkers of Aging",
+    title: "Biomarkers of Aging",
+    description:
+      "Moqri Lab is a founding member of the Biomarkers of Aging Consortium, establishing reliable biomarkers of aging for longevity interventions.",
+    link: "https://www.agingconsortium.org/"
+  },
+  {
+    tag: "Biomarkers of Alzheimer's",
+    title: "Biomarkers of Alzheimer's",
+    description:
+      "Moqri Lab builds and validates blood-based multi-omic biomarkers for brain aging and early detection of Alzheimer's.",
+    link: "https://www.agingconsortium.org/brain-aging"
+  },
+  {
+    tag: "AI for Patient Outcomes",
+    title: "AI for Patient Outcomes",
+    description:
+      "Moqri Lab uses large-scale electronic health records (EHR) and multi-omics data from the MGB Biobank to predict patient outcomes and prevent functional decline.",
+    link: "https://www.massgeneralbrigham.org/en/research-and-innovation/participate-in-research/biobank/for-researchers"
+  }
 ];
+
+export default RESEARCH;
