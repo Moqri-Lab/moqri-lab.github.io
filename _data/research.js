@@ -32,7 +32,7 @@ const RESEARCH = [
     {
       tag: "AI for Patient Outcomes",
       title: "AI for Patient Outcomes",
-      description: "Moqri Lab is using large-scale Electronic Health Records (EHR) data and multi-omics data from MGB Biobank to predict patient outcomes and prevent functional decline"
+      description: "Moqri Lab is using large-scale Electronic Health Records (EHR) data and multi-omics data from MGB Biobank to predict patient outcomes and prevent functional decline",
       link: https://www.massgeneralbrigham.org/en/research-and-innovation/participate-in-research/biobank/for-researchers
     },  
 ];
