@@ -40,4 +40,4 @@ const RESEARCH = [
   }
 ];
 
-export default RESEARCH;
+
