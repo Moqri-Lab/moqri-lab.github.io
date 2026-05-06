@@ -20,8 +20,7 @@ const RESEARCH = [
   {
     tag: "Biomarkers of Aging",
     title: "Biomarkers of Aging",
-    description:
-      "Moqri Lab is a founding member of the Biomarkers of Aging Consortium, establishing reliable biomarkers of aging for longevity interventions.",
+    description:"Moqri Lab is a founding member of the <a href="https://www.agingconsortium.org/" target="_blank">Biomarkers of Aging Consortium</a>, establishing reliable biomarkers of aging for longevity interventions.",
     link: "https://www.agingconsortium.org/"
   },
   {
