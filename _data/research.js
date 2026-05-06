@@ -31,7 +31,7 @@ const RESEARCH = [
     tag: "Biomarkers of Alzheimer's",
     title: "Biomarkers of Alzheimer's",
     description:
-      'Moqri Lab build and validate blood-based multi-omic biomarkers for <a href="https://www.agingconsortium.org/" target="_blank">Brain Aging</a> and early detection of Alzheimer\'s.',
+      'Moqri Lab build and validate blood-based multi-omic biomarkers for <a href="https://www.agingconsortium.org/brain-aging" target="_blank">Brain Aging</a> and early detection of Alzheimer\'s.',
     link: null,
       funding: [
     { name: "Proteogenomic Biomarkers for Early Detection of Alzheimer’s Disease", link: "https://curealz.org/research/foundational/biomarkers-diagnostics-studies-of-risk-resilience/proteogenomic-biomarkers-for-early-detection-of-alzheimers-disease/" }
