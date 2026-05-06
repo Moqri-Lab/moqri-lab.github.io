@@ -10,7 +10,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-brand" href="index.html">moqri-<span>lab</span></a>
+    <a class="nav-brand" href="index.html">moqri<span>lab</span></a>
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="people.html">People</a>
@@ -31,7 +31,7 @@
   &copy; <span id="yr"></span> Moqri Lab &nbsp;&middot;&nbsp; moqri-lab.github.io
 </footer>
 
-<script src="_data/research.js"></script>
+<script src="assets/research.js"></script>
 <script src="assets/nav.js"></script>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
@@ -50,11 +50,21 @@
              style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.06em;color:var(--accent);text-transform:uppercase;">
              Learn more →</a></p>`
         : '';
+      const fundingHtml = r.funding && r.funding.length
+        ? `<div class="research-funding">
+             <span class="funding-label">Funding</span>
+             ${r.funding.map(f => f.link
+               ? `<a href="${f.link}" target="_blank" rel="noopener" class="funding-item">${f.name}</a>`
+               : `<span class="funding-item">${f.name}</span>`
+             ).join('')}
+           </div>`
+        : '';
       container.innerHTML += `
         <div class="research-item">
           <span class="research-tag">${r.tag}</span>
           <h3>${r.title}</h3>
           <p>${r.description}</p>
+          ${fundingHtml}
           ${linkHtml}
         </div>`;
     });
