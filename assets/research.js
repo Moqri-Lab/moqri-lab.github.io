@@ -24,7 +24,7 @@ const RESEARCH = [
     link: null,
       funding: [
     { name: "Proactive Solutions for Prolonging Resilience (PROSPR)", link: "https://arpa-h.gov/explore-funding/programs/prospr" },
-    { name: "Finding Aging biomarkers by Searching existing Trials (FAST)", link: "https://www.afar.org/fast-initiativem" }
+    { name: "Finding Aging biomarkers by Searching existing Trials (FAST)", link: "https://www.afar.org/fast-initiative" }
   ]
   },
   {
