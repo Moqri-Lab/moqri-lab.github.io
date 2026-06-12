@@ -2,7 +2,7 @@
 
 Lab website for the Moqri Lab. Built with plain HTML/CSS/JS — no build tools, no frameworks.
 
-🌐 **Live site:** https://moqri-lab.github.io (moqri-lab.org redirect)
+🌐 **Live site:** https://moqri-lab.github.io (https://moqri-lab.org redirect)
 
 ---
 
