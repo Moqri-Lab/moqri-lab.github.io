@@ -62,6 +62,19 @@ const PEOPLE = [
       github: "https://github.com/RobbeNeirynck",
       scholar: "https://scholar.google.com/citations?user=RQweptoAAAAJ&hl=en"
     }
+  },
+
+  {
+    name: "Rey Zafarnejad, PhD, MS",
+    role: "Research Trainee",
+    photo: "assets/photos/Rey_Zafarnejad.jpg",
+    email: "rzafarnejad@bwh.harvard.edu",
+    bio: "Dr. Reyhaneh (Rey) Zafarnejad is a health economist and computational health scientist whose research combines decision science, simulation modeling, real-world evidence, and artificial intelligence to support precision medicine and healthy aging. Her work focuses on evaluating screening strategies, preventive interventions, and emerging biomarkers using clinical and population data. She has developed decision-analytic models for aging-related conditions, including fracture prevention among people aging with HIV, and is interested in translating biomarker discoveries into clinically impactful and cost-effective healthcare solutions.",
+    links: {
+      linkedin: "https://www.linkedin.com/in/rey-zafarnejad/",
+      github: "https://github.com/Rey-Zafarnejad",
+      scholar: "https://scholar.google.com/citations?user=7MUnt0EAAAAJ&hl=en&oi=ao"
+    }
   }
 
   // ── Example PhD student entry (remove or replace) ──────────

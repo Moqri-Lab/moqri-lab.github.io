@@ -837,3 +837,69 @@ footer {
   .page { padding: 2.5rem 1.25rem 4rem; }
   .pub-item { grid-template-columns: 1fr; }
 }
+
+/* ── TEXT PAGES ── */
+.text-section {
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  padding: 1.75rem;
+}
+
+.text-section p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  max-width: 680px;
+  margin-bottom: 1rem;
+}
+
+.text-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── CONTACT ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1.5px solid var(--border);
+}
+
+.contact-card {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-card:last-child {
+  border-bottom: none;
+}
+
+.contact-card:hover {
+  background: var(--surface);
+}
+
+.contact-label {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.contact-card h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.contact-card p,
+.contact-card a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.contact-card a:hover {
+  color: var(--accent);
+}
+
+
